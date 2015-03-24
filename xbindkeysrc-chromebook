@@ -1,0 +1,19 @@
+"/usr/local/bin/change-brightness.sh -100"
+    m:0x8 + c:72
+    Alt + F6
+
+"/usr/local/bin/change-brightness.sh 100"
+    m:0x8 + c:73
+    Alt + F7
+
+"amixer -D pulse sset Master 5%-"
+    m:0x8 + c:75
+    Alt + F9
+
+"amixer -D pulse sset Master 5%+"
+    m:0x8 + c:76
+    Alt + F10
+
+"amixer -D pulse sset Master toggle"
+    m:0x8 + c:74
+    Alt + F8

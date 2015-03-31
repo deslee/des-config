@@ -1,0 +1,14 @@
+#!/bin/bash
+
+path=/sys/class/backlight/intel_backlight
+
+MAX=`cat $path/max_brightness`
+ACTUAL=`cat $path/actual_brightness`
+
+VALUE=$1
+
+if [[ $1 =~ .*%$  ]] ; then
+	VALUE=`echo "scale=0; $MAX"*"${1/\%/} / 100" | bc -l `
+fi
+
+echo $VALUE > /sys/class/backlight/intel_backlight/brightness

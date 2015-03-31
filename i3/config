@@ -196,7 +196,7 @@ client.urgent           $background   $background   $color02    $color10
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command /home/desmond/des-config/status.sh
+        status_command /home/desmond/des-config/i3/status.sh
         colors {
 					background $background
 					statusline $color12

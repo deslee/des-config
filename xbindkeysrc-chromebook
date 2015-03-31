@@ -1,8 +1,8 @@
-"/usr/local/bin/change-brightness.sh -25"
+"/usr/local/bin/change-brightness.sh -25; killall -USR1 i3status"
     m:0x8 + c:72
     Alt + F6
 
-"/usr/local/bin/change-brightness.sh 25"
+"/usr/local/bin/change-brightness.sh 25; killall -USR1 i3status"
     m:0x8 + c:73
     Alt + F7
 

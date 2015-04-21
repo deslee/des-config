@@ -214,12 +214,12 @@ exec mate-volume-control-applet
 
 for_window [window_role="pop-up"] floating enable
 for_window [title="XBindKey: Hit a key"] floating enable
-for_window [class="Google-chrome-stable"] border 1pixel
-for_window [class="Google-chrome"] border 1pixel
+for_window [class="Google-chrome-stable"] border none
+for_window [class="Google-chrome"] border none
 for_window [class="X-terminal-emulator"] border 1pixel
 for_window [class="URxvt"] border 1pixel
 
-bindsym ctrl+shift+$mod+c exec i3-sensible-terminal -e cmatrix
+bindsym ctrl+shift+$mod+c exec caja --no-desktop
 bindsym ctrl+shift+$mod+w exec google-chrome-stable
 bindsym ctrl+shift+$mod+l exec i3lock -i /home/desmond/Pictures/lock.png
 
